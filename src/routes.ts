@@ -1,17 +1,25 @@
-import Home from './Home';
-import About from './About';
+import Home from './containers/Home';
+import LoggingIn from './containers/LoggingIn';
+import Dashboard from './containers/Dashboard';
 
 const routes = [
   {
-    path: "/home",
     name: "Home",
+    path: "/",
+    exact: true,
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    component: About
+    name: "Callback",
+    path: "/callback",
+    component: LoggingIn
   },
+  {
+    name: "Dashboard",
+    path: "/dashboard",
+    exact: true,
+    component: Dashboard
+  }
 ];
 
 export default routes;

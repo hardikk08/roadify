@@ -6,8 +6,8 @@ import { Global } from '@emotion/core';
 import * as serviceWorker from './serviceWorker';
 
 import globalStyles from './stylesheets/globalStyles';
-import App from './App';
-import configureStore from './store'; 
+import App from './containers/App/app';
+import configureStore from './store';
 
 const store = configureStore({});
 console.log('Initial State: ', store.getState());

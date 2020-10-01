@@ -1,11 +1,13 @@
 import { all } from 'redux-saga/effects';
-import aboutSagas from '../About/saga';
+import app from '../containers/App/sagas';
 
 export default function* rootSagas() {
   yield all([
-    aboutSagas.showEmotionWatcher,
-    aboutSagas.showReduxLoggerWatcher,
-    aboutSagas.showReduxSagaWatcher,
-    aboutSagas.showReduxWatcher,
-  ])
+    app.spotifyCodeRequestWatcher(),
+    app.spotifyTokenRequestWatcher(),
+    app.getUserProfileRequestWatcher(),
+    app.logoutRequestWatcher(),
+    app.createPlaylistRequestWatcher(),
+    app.getTopArtistsWatcher(),
+  ]);
 };

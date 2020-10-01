@@ -6,7 +6,7 @@ const GlobalStyles = css`
   }
 
   html, body {
-    font-family: Lato,Helvetica-Neue,Helvetica,Arial,sens-serif;
+    font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
     margin: 0;
     padding: 0;

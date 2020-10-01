@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import about from '../About/reducer';
+import app from '../containers/App/reducers';
 
 export default function createReducer () {
-  return combineReducers({about});
+  return combineReducers({app});
 };
